@@ -1,0 +1,127 @@
+﻿
+@{
+    ViewData["Title"] = "Contact";
+    Layout = "~/Views/Shared/_Layout_Music.cshtml";
+}
+
+
+<div id="Content">
+    <div class="content_wrapper clearfix">
+        <div class="sections_group">
+            <div class="entry-content">
+                <div class="section mcb-section" style="padding-top:120px; padding-bottom:80px;" data-parallax="3d">
+                    <img class="mfn-parallax" src="~/Music/images/home_music_sectionbg1.png" alt="parallax background" />
+                    <div class="section_wrapper mcb-section-inner">
+                        <div class="wrap mcb-wrap one-second  valign-top clearfix" style="padding:0 2% 0 0">
+                            <div class="mcb-wrap-inner">
+                                <div class="column mcb-column one column_image ">
+                                    <div class="image_frame image_item no_link scale-with-grid aligncenter no_border">
+                                        <div class="image_wrapper">
+                                            <img class="scale-with-grid" src="~/Music/images/home_music_contact1.png" alt="home_music_contact1" width="481" height="526" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap mcb-wrap one-second  valign-top clearfix" style="padding:0 0 0 2%">
+                            <div class="mcb-wrap-inner">
+                                <div class="column mcb-column one column_column  column-margin-20px">
+                                    <div class="column_attr">
+                                        <h3>Vestibulum tincidunt ornare</h3>
+                                        <p class="big">
+                                            Phasellus id lacus dapibus, tristique odio in, faucibus velit mauris mattis tincidunt. Sed eget erat arcu. Sed viverra turpis duis. Proin diam orci, ultricies ac ipsum eget, sodales hendrerit sem. Duis vel faucibus urna. Curabitur iaculis ornare tincidunt.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="column mcb-column one column_column  ">
+                                    <div class="column_attr">
+                                        <div id="contactWrapper">
+                                            <form id="contactform" method="post" asp-action="Contact" asp-controller="Angels">
+                                                <div class="column one-second">
+                                                    <input placeholder="Your name" type="text" name="Name" id="name" size="40" aria-required="true" aria-invalid="false" />
+                                                </div>
+                                                <div class="column one-second">
+                                                    <input placeholder="Your e-mail" type="email" name="Email" id="email" size="40" aria-required="true" aria-invalid="false" />
+                                                </div>
+                                                <div class="column one">
+                                                    <input placeholder="Subject" type="text" name="Subject" id="subject" size="40" aria-invalid="false" />
+                                                </div>
+                                                <div class="column one">
+                                                    <textarea placeholder="Message" name="Body" id="body" style="width:100%;" rows="10" aria-invalid="false"></textarea>
+                                                </div>
+                                                <div class="column one">
+                                                    <input type="submit" value="Send A Message" id="submit" onClick="return check_values();">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap mcb-wrap one  valign-top clearfix">
+                            <div class="mcb-wrap-inner">
+                                <div class="column mcb-column one column_divider ">
+                                    <hr class="no_line" style="margin: 0 auto 30px;" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap mcb-wrap one-second  valign-top clearfix" style="padding:0 2% 0 0">
+                            <div class="mcb-wrap-inner">
+                                <div class="column mcb-column one column_image ">
+                                    <div class="image_frame image_item no_link scale-with-grid no_border">
+                                        <div class="image_wrapper">
+                                            <img class="scale-with-grid" src="~/Music/images/home_music_contact2.png" alt="home_music_contact2" width="132" height="100" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="column mcb-column one column_column  column-margin-20px">
+                                    <div class="column_attr">
+                                        <h4>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat proident.</h4>
+                                        <hr class="no_line" style="margin: 0 auto 30px;" />
+                                        <p style="font-size: 36px; line-height: 36px;">
+                                            <a href="#"><i class="icon-facebook-circled"></i></a><a href="#"><i class="icon-gplus-circled"></i></a><a href="#"><i class="icon-twitter-circled"></i></a><a href="#"><i class="icon-pinterest-circled"></i></a><a href="#"><i class="icon-linkedin-circled"></i></a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap mcb-wrap one-second  valign-top clearfix" style="padding:0 0 0 2%">
+                            <div class="mcb-wrap-inner">
+                                <div class="column mcb-column one column_column  column-margin-20px">
+                                    <div class="column_attr">
+                                        <h3>Curabitur iaculis</h3>
+                                        <p class="big">
+                                            Nam euismod ipsum eu neque bibendum, non mollis risus viverra. Suspendisse tempor massa justo, a feugiat enim iaculis consectetur. Aliquam rhoncus.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="column mcb-column one-second column_column  ">
+                                    <div class="column_attr" style=" padding:0 5% 0 0;">
+                                        <h6>Sed imperdiet leo nec imperdiet elementum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos auctor.</h6>
+                                        <p>
+                                            In eu pulvinar sem. Fusce sed venenatis ligula. Mauris pharetra pulvinar hendrerit. Suspendisse condimentum velit odio, at fermentum augue lacinia sed.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="column mcb-column one-second column_column  ">
+                                    <div class="column_attr" style=" padding:0 5% 0 0;">
+                                        <h6>Donec sed ex eu justo consectetur euismod at sit amet nisl. Nam cursus dignissim posuere. Ut vitae tellus viverra, molestie magna sed, commodo dui orci aliquam.</h6>
+                                        <p>
+                                            Ut nisi augue, accumsan id viverra nec, hendrerit at nulla. Nunc vel imperdiet turpis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section the_content no_content">
+                    <div class="section_wrapper">
+                        <div class="the_content_wrapper"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
